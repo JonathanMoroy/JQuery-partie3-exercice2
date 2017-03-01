@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="jquery-2.2.4.js"></script>
+    <meta charset="utf-8">
+    <title>Exercice 2</title>
+  </head>
+  <body>
+    <!-- Ajout d'un formulaire avec deux bouton et un input qui affiche un resultat -->
+    <form>
+      <input type="text" name="stat" id="number" value="0">
+      <button type="button" name="button" id="add">+</button>
+      <button type="button" name="button" id="subtract">-</button>
+    </form>
+    <script>
+    // Déclaration d'une variable result qui nous sert de valeur de base 0
+      var result = 0;
+    // Ajout d'un click au bouton add qui incrémente la valeur
+      $('#add').click(function(){
+        result ++;
+        $('#number').val(result);
+      });
+    // Ajout d'un click au bouton subtract qui décrémente la valeur
+      $('#subtract').click(function(){
+        result -= 1;
+        $('#number').val(result);
+      });
+    </script>
+  </body>
+</html>
